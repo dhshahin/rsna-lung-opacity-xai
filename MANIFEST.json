@@ -1,0 +1,8 @@
+{
+  "snapshot": "v0.1-pre-isbi-extension",
+  "source_notebook": "RSNA_Pneumonia_Multiclass_XAI_v2 (1).ipynb",
+  "clean_notebook_cells": 142,
+  "large_data_included": false,
+  "model_weights_included": false,
+  "selected_result_summaries_included": true
+}
