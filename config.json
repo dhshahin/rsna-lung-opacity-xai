@@ -1,0 +1,16 @@
+{
+    "image_height": 224,
+    "image_width": 224,
+    "batch_size": 32,
+    "seed": 42,
+    "class_to_id": {
+        "Normal": 0,
+        "No Lung Opacity / Not Normal": 1,
+        "Lung Opacity": 2
+    },
+    "input_channels": 3,
+    "source_channels": 1,
+    "preprocessing": "tf.keras.applications.mobilenet_v2.preprocess_input",
+    "horizontal_flip": false,
+    "split_strategy": "70/15/15 stratified by class + position"
+}
