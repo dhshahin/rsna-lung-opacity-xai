@@ -1,0 +1,7 @@
+model,accuracy,balanced_accuracy,macro_f1,macro_roc_auc,macro_pr_auc,lung_opacity_recall,lung_opacity_f1
+Baseline MobileNetV2 Fine-tuned,0.705,0.669,0.6767,0.8587,0.7353,0.418,0.524
+Multi-scale CBAM Stage 2,0.7152,0.6887,0.6942,0.8644,0.7446,0.48,0.5634
+Advanced Transformer Stage 1,0.715,0.6939,0.6984,0.8686,0.7557,0.5177,0.5837
+Advanced Transformer Stage 2,0.7135,0.6899,0.6952,0.8693,0.7563,0.4989,0.5725
+ResNet50 Controlled Fine-tuned,0.6927,0.6495,0.6507,0.856,0.7327,0.3337,0.4574
+Advanced + CBAM 50/50 Ensemble,0.7182,0.6932,0.6984,0.873,0.7612,0.4933,0.5716

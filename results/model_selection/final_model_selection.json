@@ -1,0 +1,21 @@
+{
+  "selection_locked": true,
+  "primary_model": {
+    "name": "Advanced Transformer Stage 1",
+    "path": "NOT_VERSIONED/experiments/enhanced_mobilenetv2_multiscale_transformer_residual_v1/stage1_final.keras",
+    "reason": "Best overall validation balance based on balanced accuracy, macro F1, and Lung Opacity recall/F1."
+  },
+  "secondary_model": {
+    "name": "Advanced + CBAM 50/50 Ensemble",
+    "advanced_model_path": "NOT_VERSIONED/experiments/enhanced_mobilenetv2_multiscale_transformer_residual_v1/stage1_final.keras",
+    "cbam_model_path": "NOT_VERSIONED/experiments/enhanced_mobilenetv2_multiscale_cbam_v1/stage2_finetune_block13/stage2_final.keras",
+    "weights": [
+      0.5,
+      0.5
+    ],
+    "reason": "Pre-specified secondary benchmark with higher accuracy and ranking metrics but lower Lung Opacity sensitivity."
+  },
+  "no_more_validation_tuning": true,
+  "test_set_used": false,
+  "locked_at": "2026-08-28T12:32:41.084286"
+}

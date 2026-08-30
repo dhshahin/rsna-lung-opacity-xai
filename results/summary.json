@@ -1,0 +1,29 @@
+{
+  "snapshot": "v0.1-pre-isbi-extension",
+  "dataset_images": 26684,
+  "test_samples": 4003,
+  "primary_test": {
+    "accuracy": 0.7049712715463402,
+    "balanced_accuracy": 0.6844384625519854,
+    "macro_f1": 0.6892073846523222,
+    "macro_roc_auc_ovr": 0.8581783100038521,
+    "macro_pr_auc": 0.7419565526360667
+  },
+  "locked_ap_pa_opacity_recall": {
+    "AP": 0.6171,
+    "PA": 0.1436,
+    "difference_percentage_points": 47.36,
+    "bootstrap_95_ci_percentage_points": [
+      41.19,
+      53.47
+    ]
+  },
+  "spatial_prior": {
+    "position_conditioned_enrichment": 2.7764123034890495,
+    "layercam_enrichment": 5.764202141095924,
+    "ig256_enrichment": 1.8091178535403771,
+    "position_conditioned_pointing": 0.5986696230598669,
+    "layercam_pointing": 0.7128603104212861,
+    "ig256_pointing": 0.4844789356984479
+  }
+}

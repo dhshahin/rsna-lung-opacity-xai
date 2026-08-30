@@ -1,0 +1,50 @@
+{
+  "selection_split": "validation",
+  "no_more_xai_method_or_layer_tuning": true,
+  "target_class": {
+    "class_id": 2,
+    "name": "Lung Opacity"
+  },
+  "primary_method": {
+    "method": "LayerCAM",
+    "layer": "multiscale_fusion",
+    "score": "pre-softmax Lung Opacity logit"
+  },
+  "complementary_method": {
+    "method": "Integrated Gradients",
+    "integration_steps": 256,
+    "baseline": "zero in preprocessed [-1, 1] space",
+    "attribution": "positive attribution to Lung Opacity logit"
+  },
+  "baseline_method": {
+    "method": "Grad-CAM",
+    "layer": "multiscale_fusion"
+  },
+  "sensitivity_methods": [
+    {
+      "method": "Grad-CAM++",
+      "layer": "multiscale_fusion"
+    },
+    {
+      "method": "Score-CAM top-64 approximation",
+      "layer": "multiscale_fusion",
+      "max_N": 64
+    }
+  ],
+  "primary_localization_metrics": [
+    "bbox_energy_fraction",
+    "energy_enrichment",
+    "pointing_game",
+    "normalized_entropy"
+  ],
+  "planned_test_subgroups": [
+    "AP",
+    "PA",
+    "correct Lung Opacity",
+    "missed Lung Opacity",
+    "AP correct",
+    "AP missed",
+    "PA correct",
+    "PA missed"
+  ]
+}

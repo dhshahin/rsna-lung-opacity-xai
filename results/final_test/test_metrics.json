@@ -1,0 +1,12 @@
+{
+  "model": "Advanced Transformer Stage 1",
+  "accuracy": 0.7049712715463402,
+  "balanced_accuracy": 0.6844384625519854,
+  "macro_f1": 0.6892073846523222,
+  "weighted_f1": 0.7000710268141955,
+  "macro_roc_auc_ovr": 0.8581783100038521,
+  "weighted_roc_auc_ovr": 0.8483501515113592,
+  "macro_pr_auc": 0.7419565526360667,
+  "weighted_pr_auc": 0.7484811419098346,
+  "test_samples": 4003
+}
